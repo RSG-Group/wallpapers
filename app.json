@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "sdkVersion": "20.0.0",
+    "android": {
+      "package": "com.retrixe.wallpapers"
+    },
+    "name": "Not Bad Wallpapers",
+    "slug": "wallpapers",
+    "version": "0.1.0"
+  }
+}
