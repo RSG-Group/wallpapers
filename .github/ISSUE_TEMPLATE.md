@@ -17,9 +17,9 @@ Link to image/Uploaded image to issue:
 [//]: # (Uncomment the below format for an actual issue.)
 
 <!--
-*I'm submitting an issue.*
+*I'm submitting an issue/proposing a feature.*
 
-## Are you requesting an issue or filing a bug?
+## Are you requesting a feature or filing a bug?
 
 ## What is the current behaviour?
 
