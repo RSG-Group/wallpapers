@@ -1,5 +1,5 @@
 {
-  "presets": ["expo", "flow", "stage-0"],
+  "presets": ["expo", "flow"],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]

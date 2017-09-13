@@ -9,13 +9,12 @@
   "dependencies": {
     "expo": "^20.0.0",
     "react": "16.0.0-beta.5",
-    "react-native": "^0.47.2",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-20.0.0.tar.gz",
     "react-navigation": "^1.0.0-beta.11"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-preset-flow": "^6.23.0",
-    "babel-preset-stage-0": "^6.24.1",
     "enzyme": "^2.9.1",
     "eslint": "^4.5.0",
     "eslint-config-standard": "^10.2.1",
