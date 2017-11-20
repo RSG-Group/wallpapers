@@ -25,8 +25,10 @@ export default class HomeScreen extends React.Component<void, State> {
     super()
 
     this.state = {
-      value: false
+      value: true
     }
+    // flow-disable-next-line
+    this.onValueChange = this.onValueChange.bind(this)
   }
 
   onValueChange () {
