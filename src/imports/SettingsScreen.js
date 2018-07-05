@@ -14,8 +14,8 @@ type iconFunc = {
   tintColor: string // eslint-disable-line
 }
 
-// Create our HomeScreen.
-export default class HomeScreen extends React.Component<void, State> {
+// Create our SettingsScreen.
+export default class SettingsScreen extends React.Component<void, State> {
   static navigationOptions = {
     tabBarIcon: ({ tintColor }: iconFunc) => (
       <Ionicons name='md-settings' color={tintColor} size={24} />

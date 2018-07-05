@@ -3,6 +3,8 @@
 import React from 'react'
 // flow-disable-next-line
 import { Text, View, Button } from 'react-native'
+// Get icon from Expo.
+import { Ionicons } from '@expo/vector-icons'
 
 // Flow our props.
 type Props = {
@@ -10,11 +12,17 @@ type Props = {
     navigate: Function
   }
 }
+type iconFunc = {
+  tintColor: string // eslint-disable-line
+}
 
 // Create our HomeScreen.
 export default class WallpaperScreen extends React.Component<Props, void> {
   static navigationOptions = {
-    drawerLabel: 'Wallpapers'
+    drawerLabel: 'Wallpapers',
+    tabBarIcon: ({ tintColor }: iconFunc) => (
+      <Ionicons name='md-image' color={tintColor} size={24} />
+    )
   }
   render () {
     const { navigate } = this.props.navigation
