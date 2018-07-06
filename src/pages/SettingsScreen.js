@@ -8,7 +8,7 @@ import { Ionicons } from '@expo/vector-icons'
 
 // Flow state.
 type State = {
-  value: boolean
+  darkTheme: boolean
 }
 type iconFunc = {
   tintColor: string // eslint-disable-line
@@ -25,22 +25,24 @@ export default class SettingsScreen extends React.Component<void, State> {
     super()
 
     this.state = {
-      value: true
+      darkTheme: true
     }
-    // flow-disable-next-line
-    this.onValueChange = this.onValueChange.bind(this)
   }
 
   onValueChange () {
-    this.setState({ value: !this.state.value })
-    AsyncStorage.setItem('@Settings:value', this.state.value)
+    this.setState({ darkTheme: !this.state.darkTheme })
+    AsyncStorage.setItem('@Settings:darkTheme', this.state.darkTheme.toString())
   }
 
   render () {
     return (
-      <View style={{ margin: 10 }}>
-        <Switch onValueChange={this.onValueChange} value={this.state.value} />
-        <Text>{this.state.value}</Text>
+      <View style={{ margin: 10, display: 'flex', flexDirection: 'row' }}>
+        <Text style={{
+          fontSize: 16
+        }}>Enable Dark Theme</Text>
+        <Switch onValueChange={this.onValueChange} value={this.state.darkTheme} style={{
+          flex: 1
+        }} />
       </View>
     )
   }

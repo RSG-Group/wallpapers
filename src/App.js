@@ -1,8 +1,8 @@
 // @flow
 // Get our HomeScreen, SettingsScreen and WallpaperScreen.
-import HomeScreen from './imports/HomeScreen'
-import SettingsScreen from './imports/SettingsScreen'
-import WallpaperScreen from './imports/WallpaperScreen'
+import HomeScreen from './pages/HomeScreen'
+import SettingsScreen from './pages/SettingsScreen'
+import WallpaperScreen from './pages/WallpaperScreen'
 // Get react-navigation and React.
 // flow-disable-next-line
 import { createBottomTabNavigator, createStackNavigator } from 'react-navigation'
