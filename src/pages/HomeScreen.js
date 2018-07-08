@@ -29,7 +29,7 @@ export default class HomeScreen extends React.Component<Props, void> {
     return (
       <View style={{ margin: 10 }}>
         <Text style={{ fontSize: 18 }}>
-            Not Bad Wallpapers is a project by RSG-Group, a GitHub team working on multiple projects. It brings together many wallpapers submitted by the community and downloads them to your phone. It{`'`}s awesome, really.
+            Not Bad Wallpapers is a project by RSG-Group, a GitHub team working on multiple projects. It brings together many wallpapers and images submitted by the community and downloads them to your phone. It{`'`}s awesome, really.
         </Text>
         <View style={{ height: 25 }} />
         <Button color='#39796b' onPress={() => navigate('Wallpapers')} title='Wallpapers' />

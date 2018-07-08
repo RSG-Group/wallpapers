@@ -2,9 +2,11 @@
 // Get React and React Native.
 import React from 'react'
 // flow-disable-next-line
-import { Text, View, Button } from 'react-native'
+import { ScrollView } from 'react-native'
 // Get icon from Expo.
 import { Ionicons } from '@expo/vector-icons'
+// Get WallpaperDisplay.
+import WallpaperDisplay from '../components/WallpaperDisplay'
 
 // Flow our props.
 type Props = {
@@ -25,15 +27,15 @@ export default class WallpaperScreen extends React.Component<Props, void> {
     )
   }
   render () {
-    const { navigate } = this.props.navigation
     return (
-      <View style={{ margin: 10 }}>
-        <Text style={{ fontSize: 18 }}>
-          Not Bad Wallpapers is a project by RSG-Group, a GitHub team working on multiple projects. It brings together many wallpapers submitted by the community and downloads them to your phone. It{`'`}s awesome, really.
-        </Text>
-        <View style={{ height: 25 }} />
-        <Button color='#39796b' onPress={() => navigate('Home')} title='Home' />
-      </View>
+      <ScrollView contentContainerStyle={{
+        margin: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+      }}>
+        <WallpaperDisplay imageURL='https://cdn.discordapp.com/attachments/415150079050252308/464802356446625812/unknown.png' onClick={() => {}} />
+        <WallpaperDisplay imageURL='https://cdn.discordapp.com/attachments/415150079050252308/464802356446625812/unknown.png' onClick={() => {}} />
+      </ScrollView>
     )
   }
 }
